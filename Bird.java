@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Bird implements Critter {
 
+//    Init of random object
     public Bird() {
         r = new Random();
     }
@@ -12,6 +13,7 @@ public class Bird implements Critter {
         return 'B';
     }
 
+//    creates gets a random int, and returns a corresponding direction
     @Override
     public int getMove(CritterInfo info) {
         int move = r.nextInt(4);

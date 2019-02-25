@@ -9,11 +9,11 @@ public class CritterMain {
 
 //        frame.add(25, "Stone");
         frame.add(25, "Bird");
-        frame.add(25*2, "Frog");
+        frame.add(2000, "Frog");
         frame.add(25, "OldTurtle");
         frame.add(25, "Turtle");
         frame.add(25, "Wolf");
-        frame.add(25, "Stone");
+        frame.add(500, "Stone");
 
         frame.start();
     }

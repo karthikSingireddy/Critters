@@ -4,9 +4,11 @@ public class Turtle implements Critter {
         return 'T';
     }
 
+//    
     private int currentMove;
     private int moves;
 
+//    initializes variables to move Critter.SOUTH and sets moves to 0
     public Turtle() {
         currentMove = Critter.SOUTH;
         moves = 0;
@@ -14,10 +16,13 @@ public class Turtle implements Critter {
 
     @Override
     public int getMove(CritterInfo info) {
+//        keeps moving in the same direction if the number of moves is less than 4
         if(moves < 4) {
             moves++;
             return this.currentMove;
         }
+        
+//        Switch case to change the direction to the corresponding direction
         moves = 0;
         switch (this.currentMove) {
             case Critter.SOUTH:
